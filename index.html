@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Solsystemet</title>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <link rel="stylesheet" href="blueberry.css" />
+        <style type="text/css">
+            * {
+                margin: 0;
+                border: 0;
+                padding: 0;
+            }
+            body {
+                background: #f0f0f0;
+                font: 14px/20px Arial, San-Serif;
+                color: #555;
+                margin: 0;
+            }
+            h1 {
+                text-align: center;
+                font-size: 180%;
+                line-height: 120%;
+                padding: 5% 0;
+            }
+            h2 {
+                text-decoration: underline;
+                line-height: 280%;
+                padding-left: 2%;
+            }
+            h3 {
+                line-height: 110%;
+                padding: 5% 0;
+            }
+            p {
+                padding: 1%;
+            }
+            img {
+                text-align: center;
+                max-width: 100%;
+                height: auto;
+                width: auto;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:hover {
+                color: white;
+                text-decoration: underline;
+            }
+            header {
+                background: #405580;
+                width: 100%;
+                height: 86px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 100;
+                opacity: 0.90;
+            }
+            #logo {
+                margin: 20px;
+                float: left;
+                width: 200px;
+                height: 60px;
+                background-image: url(images/Logo.png);
+                background-size: contain;
+            }
+            nav {
+                float: right;
+                padding: 35px 20px 20px 0;
+            }
+            #menu-icon {
+                display: hidden;
+                width: 40px;
+                height: 40px;
+                background: url(https://www.w3newbie.com/wp-content/uploads/icon.png ) center;
+            }
+            a:hover#menu-icon {
+                border-radius: 4px 4px 0 0;
+            }
+            ul {
+                list-style: none;
+            }
+            nav ul li {
+                display: inline-block;
+                float: left;
+                padding: 10px;
+            }
+            .current {
+                color: white;
+                text-decoration: underline;
+            }
+            #doc {
+                margin: 40px 0;
+            }
+            #content {
+                margin: 0 auto;
+                max-width: 1140px;
+                margin-top: 110px;
+            }
+            .blueberry {
+                max-width: 960px;
+                margin-top: 110px;
+            }
+            section {
+                width: 29%;
+                float: left;
+                margin: 2% 2%;
+                text-align: center;
+            }
+            .cleear {
+                clear: both;
+            }
+            article {
+                float: left;
+                margin: 0 auto;
+                width: 50%;
+                height: auto;
+                padding: 4%;
+            }
+            aside {
+                float: right;
+                margin: 0 auto;
+                width: 35%;
+                height: auto;
+                padding: 3%;
+            }
+            ul.gym li {
+                padding-left: 3%;
+            }
+            footer {
+                background: #333333;
+                width: 100%;
+                overflow: hidden;
+                opacity: 0.90;
+            }
+            footer p, footer h3 {
+                color: white;
+            }
+            footer p a {
+                color: white;
+                text-decoration: none;
+            }
+            ul.social li {
+                display: inline;
+            }
+            ul. social li img {
+                height: 50px;
+            }
+            footer.second {
+                border-top: 1px solid #4D4E50;
+                background-color: #333333;
+                max-height: 50px;
+                text-align: center;
+                opacity: 0.95;
+            }    
+            /*--------------------MEDIA!!!------------------*/
+            @media screen and (max-width: 478px) {
+                body {
+                    position: absolute;
+                }
+            }
+            @media screen and (max-width: 740px) {
+                header {
+                    position: absolute;
+                }
+                #menu-icon {
+                    display: inline-block;
+                }
+                nav ul, nav:active ul {
+                    display: none;
+                    position: absolute;
+                    padding: 20px;
+                    background: #405580;
+                    border: 1px solid #FFF;
+                    right: 20px;
+                    top: 60px;
+                    width: 50%;
+                    border-radius: 2px 0 2px 2px;
+                }
+                nav li {
+                    text-align: center;
+                    width: 100%;
+                    padding: 10px 0;
+                    margin: 0;
+                }
+                nav:hover ul {
+                    display: block;
+                }
+                section {
+                    float: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                article {
+                    float: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                aside {
+                    float: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="jquery.blueberry.js"></script>
+        <script>
+            $(window).load(function() {
+                $('.blueberry').blueberry();
+            });
+        </script>
+    </head>
+    <body>
+    <header>
+        <a href="#" id="logo"></a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="#" class="current">Hem</a></li>
+                <li><a href="#">Merkuris</a></li>
+                <li><a href="#">Venus</a></li>
+                <li><a href="#">Jorden</a></li>
+                <li><a href="#">Mars</a></li>
+                <li><a href="#">Jupiter</a></li>
+                <li><a href="#">Saturnus</a></li>
+                <li><a href="#">Uranus</a></li>
+                <li><a href="#">Neptunus</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div id="doc">
+            <div id="content">
+                <div class="blueberry">
+                    <ul class="slides">
+                        <li><img src="images/merkurius.jpg"</li>
+                            <li><img src="images/venus.jpg"</li>
+                            <li><img src="images/jorden.jpg"</li>
+                        <li><img src="images/mars.jpg"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section>
+            <img src="http://www.w3newbie.com/wp-content/uploads/youtube1.png" />
+            <h1>Hitta oss på Youtube!</h1>
+            <p>Glöm inte att checka in på våran kanal! Vi laddar upp videor dagligen, lär det mycket för oss. Vad väntar du på? Prenumerera nu!</p>
+            <img src="http://www.w3newbie.com/wp-content/uploads/twitter1.png" />
+            <h1>Hitta oss på Twitter!</h1>
+            <p>I Twitter publicerar vi nyheter om Solsystemet! Vi lägger upp nyheter och viktig information dagligen! Gå in och följ oss nu, du kommer inte ångra dig!</p>
+            <img src="http://www.w3newbie.com/wp-content/uploads/facebook1.png" />
+            <h1>Hitta oss på Facebook!</h1>
+            <p>I Facebook publicerar vi nyheter om Solsystemet! Joina våran grupp och lär känna nya vänner!</p>
+        </section>
+        <div class="clear"></div>
+        <article>
+            <img src="images/solen.jpeg" />
+        </article>
+        <aside>
+            <h2>Intressant fakta om Solen.</h2>
+            <ul class="gym">
+                <li><h3>Solen är en stjärna.</h3></li>
+                <li><h3>En miljon gånger större än Jorden.</h3></li>
+                <li><h3>Centrela delarna i Solen når 15 miljoner  °C.</h3></li>
+                <li><h3>Har ingen fast yta!</h3></li>
+                <li><h3>Det finns sjärnor som är 100 gånger störe än Solen!</h3></li>
+            </ul>
+        </aside>
+        <div class="clear"></div>
+        <section>
+            <h1>Läs om NASA:s uppdrag!</h1>
+            <img src="images/nasamission.jpg"/>
+            <p>NASA har haft flera uppdrag sen kalla kriget. Ta reda på alla uppdrag och läs om dem! All kredit går till NASA:https://www.nasa.gov/missions</p>
+        </section>
+        <section>
+            <h1>Håll Jorden ren!</h1>
+            <img src="images/jorden.jpg" />
+            <p>Jorden är våran hem, vi vill inte ha ett dåligt hem! Läs mer om hur global värmning påverkar jorden.</p>
+        </section>
+        <section>
+            <h1>Koloniseringen av Mars!</h1>
+            <img src="images/mars.jpg" />
+            <p>Vi människor är nära att kolonisera Mars, läs mer om resan till   Mars!https://www.nasa.gov/topics/journeytomars/index.html</p>
+        </section>
+        <footer>
+            <section>
+            <h3><b>Solsystemet</b></h3>
+            <p><b>231-555-555</b><br><br>23 Holmvägen, Stockholm, 132-321, solsystemet@gmail.com</p>
+            </section>
+            <section>
+                <h3>Kontakta oss!</h3>
+                <ul class="social">
+                    <li><a href="#"><im src="http://www.w3newbie.com/wp-content/uploads/facebook1.png"</a></li>
+                    <li><a href="#"><im src="http://www.w3newbie.com/wp-content/uploads/twitter1.png"</a></li>
+                    <li><a href="#"><im src="http://www.w3newbie.com/wp-content/uploads/googleplus.png"</a></li>
+                    <li><a href="#"><im src="http://www.w3newbie.com/wp-content/uploads/youtube1.png"</a></li>
+                </ul>
+            </section>
+            <section>
+                <li><a href="#"><im src="images/globe.png"</a></li>
+            </section>
+        </footer>
+        <footer class="second">
+            <p>&copy;Copyright - Solsystemet 2018.</p>
+        </footer>
+    </body>
+</html>
